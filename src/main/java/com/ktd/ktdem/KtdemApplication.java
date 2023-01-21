@@ -1,5 +1,7 @@
 package com.ktd.ktdem;
 
+// https://medium.com/lydtech-consulting/kafka-streams-spring-boot-demo-ff0e74e08c9c
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -26,7 +28,7 @@ public class KtdemApplication implements CommandLineRunner {
 		KStream<String, String> views = builder.stream(
 			"purchases",
 			Consumed.with(stringSerde, stringSerde)
-		);
+		); 
 
 		
 	}
