@@ -33,6 +33,7 @@ public class TweetMsgConsumer {
             // exemple with custom serdes
             // https://developer.confluent.io/tutorials/changing-serialization-format/kstreams.html
             // https://www.geeksforgeeks.org/spring-boot-consume-json-object-from-kafka-topics/
+            // https://kapeli.com/cheat_sheets/KStreams.docset/Contents/Resources/Documents/index
         
         stream
             .flatMapValues(value -> Arrays.asList(value.toLowerCase().split("\\W+")))
